@@ -16,14 +16,11 @@ public class ApplicationTask02  {
             a = sc.nextDouble();
 
             System.out.println("Введіть число b");
-
-            sc = new Scanner(System.in);
+        
             if (sc.hasNextDouble()) {
-                b = sc.nextDouble();
-
-           Methods ms = new Methods(a, b);
-
-                ms.checkingVariables();
+            b = sc.nextDouble();
+            Methods ms = new Methods(a, b);
+            ms.checkingVariables();
             System.out.println("a+b = " + ms.add());
             System.out.println("a-b = " + ms.minus());
             System.out.println("a*b = " + ms.multiplication());
